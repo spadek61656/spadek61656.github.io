@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+  <style>
+    .banner img {
+      width: 100%;
+      height: 100%;
+    }
+    .resume {
+      padding: 50px;
+    }
+    .side {
+      background-color: #777;
+      height: 100%;
+      padding: 0;
+    }
+    #main {
+      background-color: #fff;
+      min-height: 600px;
+      padding: 0 50px 50px;
+    }
+    .profile {
+      background-color: #222;
+      text-align: center;
+      padding: 20px;
+    }
+    .side img {
+      width: 150px;
+      height: 150px;
+    }
+    .font-white {
+      color: #fff;
+    }
+    .contact {
+      padding: 2px 30px;
+    }
+    .contact ul {
+      padding-top: 30px;
+      padding-left: 0;
+      list-style: none;
+    }
+    .contact ul li {
+      margin-bottom: 2px;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 25px 0;
+      color: #f3f;
+    }
+    .album {
+      background-color: #006;
+      padding: 50px;
+    }
+    .album img {
+      margin: 20px 0;
+    }
+    body {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript">
+    $(function(){
+      $("ul>li>a").click(function(event) {
+        event.preventDefault();
+        var ref = $(this).attr("href");
+        $("body, html").animate({ scrollTop: $(ref).offset().top }, 1000);
+      });
+      $('body').scrollspy({ target: '#navbar-example' })
+    });
+  </script>
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+  <div>
+    <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <font face="微軟正黑體">我的個人網站</font>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#index">
+              <font face="微軟正黑體">首頁</font></a></li>
+            <li><a href="#about">
+              <font face="微軟正黑體">個人介紹</font></a></li>
+            <li><a href="#photo">
+              <font face="微軟正黑體">相片集</font></a></li>
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+  <div id="index" class="banner">
+    <img class="img-responsive" src="http://backgroundlabs.com/files/hills-trees-vector-background-3018.png" alt="" >
+  </div>
+  <div id="about" class="resume">
+    <div class="row">
+      <div class="visible-xs side col-sm-4 col-md-3">
+        <div class="profile">
+          <img class="img-circle" src="https://s3-us-west-1.amazonaws.com/niusnews-imgs/206824_2.jpg" alt="">
+          <h2 class="font-white">
+            <font face="微軟正黑體">李敏鎬</font>
+          </h2>
+          <h4 class="font-white">韓國一線男演員</h4>
+        </div>
+        <div class="contact">
+          <ul class="font-white">
+            <li>
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+              &nbsp;test@gmail.com
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+              &nbsp;0920123456
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h4 class="font-white">教育程度</h4>
+          <h5 class="font-white">建國大學電影藝術學系</h5>
+          <h5 class="font-white">國民大學綜合藝術系研究所</h5>
+        </div>
+      </div>
+      <div id="main" class="col-sm-8 col-md-9">
+        <div class="area">
+          <div class="title">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            <span>
+              <font face="微軟正黑體">個人簡介</font>
+            </span>
+          </div>
+          <div class="content">
+            <p>
+              <font face="微軟正黑體">WaterYi，一位非常平凡不能再平凡的大學生</font>
+            </p>
+            <p
+            <font face="微軟正黑體">2017年，即將開始從非常平凡不能再平凡的日子改變成平凡的日子(還是平凡的日子)</font>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hidden-xs side col-sm-4 col-md-3">
+        <div class="profile">
+          <img class="img-circle" src="https://cdn.pixabay.com/photo/2016/10/06/22/43/christmas-1720181_960_720.jpg" alt="">
+          <h2 class="font-white">WaterYi</h2>
+        </div>
+        <div class="contact">
+          <ul class="font-white">
+            <li>
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+              &nbsp;test@gmail.com
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+              &nbsp;0912345678
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h4 class="font-white">
+            <font face="微軟正黑體">教育程度</font>
+          </h4>
+          <h5 class="font-white">
+            <font face="微軟正黑體">銘傳大學電通系</font>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="photo" class="album">
+    <div class="row">
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <img class="img-thumbnail" src="https://cdn.pixabay.com/photo/2016/11/24/13/00/white-male-1856176_960_720.jpg" alt="">
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <img class="img-thumbnail" src="https://cdn.pixabay.com/photo/2016/12/06/03/09/christmas-1885470_960_720.png" alt="">
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <img class="img-thumbnail" src="https://cdn.pixabay.com/photo/2016/10/03/13/06/christmas-1711568_960_720.jpg" alt="">
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <img class="img-thumbnail" src="https://cdn.pixabay.com/photo/2012/02/23/08/42/christmas-bauble-15738_960_720.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
